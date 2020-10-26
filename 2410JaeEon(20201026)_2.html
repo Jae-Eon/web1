@@ -10,7 +10,7 @@
 
     var x = canvas1.width / 6;
     var y = canvas1.height / 6;
-    var radius = 15;
+    var radius = 30;
     var startAngle = 0 * Math.PI / 180;
     var endAngle = 180 * Math.PI / 180;
 
@@ -34,7 +34,7 @@
     context1.arc(3 * x, 3 * y, radius, startAngle, endAngle, true);
     context1.stroke();
 
-    endAngle = 360 * Math.PI / 180;
+    endAngle = 2 * Math.PI; //360도
 
     context1.beginPath();
     context1.arc(6 * x, y, radius, startAngle, endAngle);
@@ -48,9 +48,9 @@
     var canvas2 = document.getElementById("canvas1");
     var context2 = canvas1.getContext("2d");
 
-    var x = canvas1.width / 6;
-    var y = canvas1.height / 6;
-    var radius = 15;
+    var x = canvas2.width / 6;
+    var y = canvas2.height / 6;
+    var radius = 30;
     var startAngle = 0 * Math.PI / 180;
     var endAngle = 180 * Math.PI / 180;
 
@@ -74,7 +74,7 @@
     context2.arc(3 * x, 3 * y, radius, startAngle, endAngle, true);
     context2.fill();
 
-    endAngle = 360 * Math.PI / 180;
+    endAngle = 2 * Math.PI; //360도
 
     context2.beginPath();
     context2.arc(6 * x, y, radius, startAngle, endAngle);
