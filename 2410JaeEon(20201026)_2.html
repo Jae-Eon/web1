@@ -26,23 +26,23 @@
     endAngle = 270 * Math.PI / 180;
 
     context1.beginPath();
-    context1.arc(3 * x, y, radius, startAngle, endAngle);
+    context1.arc(4 * x, y, radius, startAngle, endAngle);
     context1.closePath();
     context1.stroke();
 
     context1.beginPath();
-    context1.arc(3 * x, 3 * y, radius, startAngle, endAngle, true);
+    context1.arc(2 * x, 3 * y, radius, startAngle, endAngle, true);
     context1.stroke();
 
     endAngle = 2 * Math.PI; //360도
 
     context1.beginPath();
-    context1.arc(6 * x, y, radius, startAngle, endAngle);
+    context1.arc(4 * x, y, radius, startAngle, endAngle);
     context1.closePath();
     context1.stroke();
 
     context1.beginPath();
-    context1.arc(6 * x, 3 * y, radius, startAngle, endAngle, true);
+    context1.arc(4 * x, 3 * y, radius, startAngle, endAngle, true);
     context1.stroke();
 
     var canvas2 = document.getElementById("canvas2");
@@ -50,6 +50,8 @@
 
     var x = canvas2.width / 6;
     var y = canvas2.height / 6;
+
+    console.log(x+", "+y);
     var radius = 30;
     var startAngle = 0 * Math.PI / 180;
     var endAngle = 180 * Math.PI / 180;
@@ -66,28 +68,28 @@
     endAngle = 270 * Math.PI / 180;
 
     context2.beginPath();
-    context2.arc(3 * x, y, radius, startAngle, endAngle);
+    context2.arc(2 * x, y, radius, startAngle, endAngle);
     context2.closePath();
     context2.fill();
 
     context2.beginPath();
-    context2.arc(3 * x, 3 * y, radius, startAngle, endAngle, true);
+    context2.arc(2 * x, 3 * y, radius, startAngle, endAngle, true);
     context2.fill();
 
     endAngle = 2 * Math.PI; //360도
 
     context2.beginPath();
-    context2.arc(6 * x, y, radius, startAngle, endAngle);
+    context2.arc(4 * x, y, radius, startAngle, endAngle);
     context2.closePath();
     context2.fill();
 
     context2.beginPath();
-    context2.arc(6 * x, 3 * y, radius, startAngle, endAngle, true);
+    context2.arc(4 * x, 3 * y, radius, startAngle, endAngle, true);
     context2.fill();
   </script>
 </head>
 
-<body onload="drawCircle();">
+<body>
   <div>
     <canvas id="canvas1" width="400" height="200"></canvas>
   </div>
