@@ -15,20 +15,23 @@
   <canvas id="theCanvas" width="240" height="297" style="border:1px solid #d3d3d3;">
     Your browser does not support the HTML5 canvas tag.</canvas>
   <script>
-    window.onload = function() {
+    function drawImage() {
       var canvas = document.getElementById("myCanvas");
       var ctx = canvas.getContext("2d");
       var img = document.getElementById("scream");
       ctx.drawImage(img, 10, 10);
     };
 
-    window.onload = function() {
+    function drawText() {
       var canvas = document.getElementById("theCanvas");
       var context = canvas.getContext("2d");
       context.font = "30px Comic Sans MS";
       context.fillStyle = "red";
       context.textAlign = "center"; // context.fillText("Hello World", 10, 50); context.fillText("Hello world", canvas.width / 2, canvas.height / 2);
     }
+
+    window.onload = drawText();
+    window.onload = drawImage();
   </script>
 
 </body>
